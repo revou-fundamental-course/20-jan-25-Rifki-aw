@@ -1,0 +1,157 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #E5E7EB;
+}
+
+main {
+    display: flex;
+    gap: 90px;
+    padding: 64px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+main section {
+    flex: 1 1 300px;
+    min-width: 540px;
+    max-width: 1180px;
+}
+
+@media (max-width: 540px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section {
+        max-width: 100%;
+    }
+}
+
+p, li {
+    font-size: larger;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    font-weight: 600;
+}
+
+.radio-group {
+    font-weight: 500;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* display: flex;
+    border: 1px solid #ccc; */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#result-bmi {
+    font-size: xxx-large;
+    font-family: math;
+}
+
+.main-header, footer, .result {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+.submit {
+    background-color: #0EA5E9;
+    border: 2px solid #0EA5E9;
+    color: whitesmoke;
+}
+
+.submit:hover {
+    background-color: transparent;
+    color: #0EA5E9;
+}
+
+.reset {
+    background-color: #EF4444;
+    border: 2px solid #EF4444;
+    color: whitesmoke;
+}
+
+.reset:hover {
+    background-color: transparent;
+    color: #EF4444;
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+table {
+    font-size: larger;
+    font-weight: 500;
+    width: 80%;
+    margin-top: 16px;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+#category {
+    margin-top: 16px;
+    font-size: 24px;
+}
+
+.underweight {
+    background-color: #0EA5E9!important;
+    color: whitesmoke!important;
+    border-radius: 4px!important;
+    padding: 8px!important;
+}
+
+.normal {
+    background-color: green!important;
+    color: whitesmoke!important;
+    border-radius: 4px!important;
+    padding: 8px!important;
+}
+
+.overweight {
+    background-color: orange!important;
+    color: whitesmoke!important;
+    border-radius: 4px!important;
+    padding: 8px!important;
+}
+
+.obese {
+    background-color: red!important;
+    color: whitesmoke!important;
+    border-radius: 4px!important;
+    padding: 8px!important;
+}

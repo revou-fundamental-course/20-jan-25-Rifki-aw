@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+    </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header / navbar -->
+    <header class="main-header">
+      <h1>Kalkulator BMI</h1>
+    </header>
+
+    <!-- Content -->
+    <main>
+      <!-- Left Content -->
+      <section>
+        <!-- Introduction -->
+        <article>
+          <p>
+            Berat badan ideal adalah impuan orang. Tidak hanya memilik bentuk
+            tubuh yang menunjang penampilan, berat badan ideal juga menandakan
+            kondisi tubuh yang sehat. Bagaimana denganmu ? <br />
+            Yuk, hitung sekarang di kalkulator BMI.
+          </p>
+        </article>
+
+        <!-- Form -->
+        <div class="container">
+          <form action="#" id="form-data">
+
+            <div class="form-group">
+              <label for="gender">Jenis Kelamin</label>
+              <div class="radio-group">
+                <input type="radio" id="pria" name="gender" value="Pria"/>
+                <label for="pria">Pria</label>
+
+                <input type="radio" id="wanita" name="gender" value="Wanita"/>
+                <label for="wanita">Wanita</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="weight">Berat Badan (Kg)</label>
+              <input type="number" name="weight" id="weight" />
+            </div>
+
+            <div class="form-group">
+              <label for="height">Tinggi Badan (cm)</label>
+              <input type="number" name="height" id="height" />
+            </div>
+
+            <div class="form-group">
+              <label for="age">Usia (tahun)</label>
+              <input type="number" name="age" id="age" />
+            </div>
+
+            <div>
+              <button type="submit" class="button submit" onclick="calculate(event)">
+                Hitung BMI
+              </button>
+              <button type="reset" class="button reset">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Feature information -->
+        <article>
+          <header>
+            <h2>Keunggulan Fitur</h2>
+          </header>
+          <ul>
+            <li>Menghitung Berat Badan</li>
+            <li>Menentukan kategori berat badan ideal atau tidak</li>
+            <li>Mempersiapkan program penurunan berat badan</li>
+          </ul>
+          <p>
+            Kalukulator ini hanya boleh digunakan oleh orang dewasa (wanita
+            hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan
+            tidak ada tindakan yang harus diambil berdasarkan nilainya selain
+            berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+          </p>
+          <p>
+            Kalkulator akan memberikan Anda gambaran perbandingan berat badan
+            Anda dengan nilai umum. Indeks Masa Tubuh (atau BMI) dihitung
+            sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat
+            tinggi badan Anda (dalam meter) atau BMI = Kg/M&sup2.
+          </p>
+        </article>
+      </section>
+
+      <!-- Right Content -->
+      <section>
+        <div class="container">
+          <header class="result">
+            <h2>Hasil perhitungan BMI</h2>
+          </header>
+
+          <section class="result">
+            <span id="result-bmi">0</span>
+            <div id="category"></div>
+          </section>
+        </div>
+
+        <article>
+          <table>
+            <tr>
+              <td>Kekurangan Berat Badan</td>
+              <td>: < 18.5</td>
+            </tr>
+            <tr>
+              <td>Berat Badan Normal (ideal)</td>
+              <td>: 18.5 - 24.9</td>
+            </tr>
+            <tr>
+              <td>Kelebihan Berat Badan</td>
+              <td>: 25 - 29.9</td>
+            </tr>
+            <tr>
+              <td>Kegemukan (obesitas)</td>
+              <td>: ≥ 30</td>
+            </tr>
+          </table>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            consectetur ullam voluptatem commodi quam quis vel exercitationem
+            blanditiis possimus reiciendis, facere debitis culpa veritatis
+            explicabo iure recusandae incidunt ea perspiciatis, natus
+            architecto! Vel incidunt, exercitationem sed ratione aperiam
+            dignissimos quaerat expedita iste tempora, culpa animi quisquam
+            itaque velit et a! Officiis ipsam fugit unde, itaque magnam facere
+            necessitatibus expedita ipsa facilis ducimus architecto, modi beatae
+            sit in provident soluta. Voluptas, natus incidunt molestias error
+            suscipit quibusdam adipisci expedita, repellendus ea, officiis eius
+            vitae quaerat animi excepturi? Quo, doloribus nulla? Dignissimos
+            maiores culpa iure error quibusdam, voluptatibus ad temporibus. A,
+            veritatis.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>Made by Muhammad Rifki Bahrul Ulum</footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
